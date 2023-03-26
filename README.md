@@ -1,7 +1,7 @@
 Plan for a computer controlled analog polysynth. This project is in very early steps.  
 The design is ~~mostly stolen from~~ slightly inspired by the Prophet-5 synthesizer. Of all the fields involved, analog circuitry is the one I'm least experienced with, so this borrows heavily from designs made by other people.
 
-The plan is to design a voice unit that be commanded by a Raspberry Pi, or such. The self contained design with each voice having it's own microcontroller makes 
+The plan is to design a voice unit that be commanded by a Raspberry Pi, or such. The self contained design should make it easy to make changes to the voice unit or control without having to consider the other side too much.
 
 Notable credits:
 - Great explanation on the 3340 VCO: https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/
