@@ -1,3 +1,5 @@
+# Synthesizer design
+
 Plan for a computer controlled analog polysynth. This project is in very early steps.  
 The design is ~~mostly stolen from~~ slightly inspired by the Prophet-5 synthesizer. Of all the fields involved, analog circuitry is the one I'm least experienced with, so this borrows heavily from designs made by other people.
 
