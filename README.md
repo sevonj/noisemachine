@@ -1,15 +1,14 @@
 # Synthesizer design
 
 Plan for a computer controlled analog polysynth. This project is in very early steps.  
-The design is ~~mostly stolen from~~ slightly inspired by the Prophet-5 synthesizer. Of all the fields involved, analog circuitry is the one I'm least experienced with, so this borrows heavily from designs made by other people.
+The design is ~~mostly stolen from~~ slightly inspired by the Prophet-5 synthesizer. Of all the fields involved, analog circuitry is the one I'm least experienced with, so this borrows from designs made by other people.
 
 The plan is to design a voice unit that be commanded by a Raspberry Pi, or such. The self contained design should make it easy to make changes to the voice unit or control without having to consider the other side too much.
 
-Notable credits:
+Notable credits and resources:
 - Great explanation on the 3340 VCO: https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/
-- I jacked many resistor values for a 12v design from here: https://www.skullandcircuits.com/the-oscillator-one/?v=d3dcf429c679
+- I borrowed some resistor values for a 12 V design from here: https://www.skullandcircuits.com/the-oscillator-one/?v=d3dcf429c679
 - https://cabintechglobal.com/tune3340
-- https://www.youtube.com/watch?v=4Kz8YopLTCQ My original inspiration. After that came out I built what's probably the world's jankiest monosynth.
 
 ## Voice unit design:
 Mostly following the Prophet-5 design. I'm planning to implement, envelopes, and such programmatically in the microcontroller. The only input to the module would be the I2C bus. VCO A uses pulse and saw outputs. VCO B uses the tri output as well. Uses 16-pin eurorack power connector. Maybe I can even repurpose the unused gate/CV pins for i2C?
